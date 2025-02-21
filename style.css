@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+:root{
+    --color-one:#E6C744;
+    --color-two:#FFFFFF;
+    --color-tHREE:#000000;
+    --color-four:#C2C8DA;
+    --font-family: poppins;
+
+}
+body{
+    background-color: var(--color-two);
+}
+li{
+   text-decoration: none;
+   list-style: none;
+}
+a{
+    text-decoration: none;
+}
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: var(--color-one);
+    padding: 5vh;
+}
+.headerlogo{
+    width: 10%;
+    align-items: center;
+    margin-right: auto;
+}
+.headerlogo>img{
+   width: 100%;
+   align-self: center;}
+.header-links{
+    display: flex;
+    gap:3vh;
+    text-decoration: none;
+    align-items: center;
+}
+.link{
+    color: var(--color-tHREE);
+}
+.signup-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.2vh;
+    border-radius: 8%;
+    background-color: var(--color-tHREE);
+    color: var(--color-two);
+}
+#hero{
+    padding: 10vh;
+}
+.hero-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 4vh;
+    padding-right: 4vh;
+    background-color: grey;
+    border-radius: 2%;
+}
+.left-side{
+    width: 40%;
+    justify-content: center; 
+}
+.hero-heading{
+    font-size: 70px;
+    text-align: center;
+}
+.bg-white{
+    background-color: var(--color-two);
+}
+.bg-gold{
+    background-color: var(--color-one);
+}
+.button{
+    background-color: var(--color-tHREE);
+    width: fit-content;
+    color: var(--color-two);
+    padding: 2vh;
+    border-radius: 10%;
+}
+.right-side{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+#brands{
+    background-color: var(--color-one);
+}
