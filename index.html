@@ -8,52 +8,76 @@
     <title>Shoping Website</title>
 </head>
 <body>
+  
     <header>
         <div class="headerlogo">
           <img src="Logo.png">
         </div>
         <div class="header-links-container">
             <ul class="header-links">
-                <a href="#" class="link"><li>CATALOGUE</li></a>
-                <a href="#" class="link"><li>FASHION</li></a>
-                <a href="#" class="link"><li>FAVOURITE</li></a>
-                <a href="#" class="link"><li>LIFESTYLE</li></a>
+                <a href="#" class="link for-pc"><li>CATALOGUE</li></a>
+                <a href="#" class="link for-pc"><li>FASHION</li></a>
+                <a href="#" class="link for-pc"><li>FAVOURITE</li></a>
+                <a href="#" class="link for-pc"><li>LIFESTYLE</li></a>
                 <a href="#" class="link"><li class="signup-button">SIGN UP</li></a>
 
             </ul>
-       </div>   
+        </div>  
+        <div class="menue">
+            <input type="checkbox" id="side-bar" >
+            <label for="side-bar" class="open-sidebar">
+                <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px"  fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+            </label>
+            <div class="menue-list">
+                <label for="side-bar">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                </label>
+                <a href="#"><p>CATALOGUE</p></a>
+                <a href="#"><p>FASHION</p></a>
+                <a href="#"><p>FAVOURITE</p></a>
+                <a href="#"><p>LIFESTYLE</p></a>
+            </div>
+            <label for="side-bar">
+                <div class="overall"></div>
+            </label>
+          
+        </div> 
     </header>
+    <!-- for  sections/ elements  you want to animate
+   name the class : class to-be-animated-->
     <section id="hero">
         <div class="hero-div">
-            <div class="left-side">
+            <div class="left-side to-be-animated">
                <h1 class="hero-heading"><span class="bg-white"> LET'S</span> EXPLORE <span class="bg-gold">UNIQUE</span>  CLOTHES.</h1>
-               <p>Live for influential and innoative fashion!</p>
+               <p class="hero-text">Live for influential and innoative fashion!</p>
                <div class="button"><p>ShopNow</p></div>
             </div>
-            <div class="right-side">
+            <div class="right-side to-be-animated">
                 <img src="Hero Picture.png">
             </div>
         </div>
     </section>
     <section id="brands">
-        <div class="brand-logo">
-            <img src="">
+        <div class="brand-logo to-be-animated">
+            <img src="handM.png">
         </div>
-        <div class="brand-logo">
-            <img src="">
+        <div class="brand-logo to-be-animated">
+            <img src="obey.png">
         </div>
-        <div class="brand-logo">
-            <img src="">
+        <div class="brand-logo to-be-animated">
+            <img src="shopify.png">
         </div>
-        <div class="brand-logo">
-            <img src="">
+        <div class="brand-logo to-be-animated">
+            <img src="lacoste.png">
+        </div>
+        <div class="brand-logo to-be-animated">
+            <img src="levis.png">
+        </div>
+        <div class="brand-logo to-be-animated">
+            <img src="amazon.png">
         </div>
     </section>
-    <div class="brand-logo">
-        <img src="">
-    </div>
-    <div class="brand-logo">
-        <img src="">
-    </div>
+    <!-- Obi Contiue from Here-->
+   
 </body>
 </html>
