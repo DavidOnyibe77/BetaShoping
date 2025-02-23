@@ -12,6 +12,21 @@
     --font-family: poppins;
 
 }
+@keyframes appear{
+    from{
+        opacity: 0;
+        scale: 0.5;
+        }
+        to{
+            opacity: 1;
+            scale: 1; 
+        }
+    }
+    .to-be-animated{
+        animation: appear  linear;
+        animation-timeline: view();
+        animation-range: entry 0  ;
+    }
 body{
     background-color: var(--color-two);
 }
@@ -26,7 +41,7 @@ header{
     width: 100%;
     display: flex;
     align-items: center;
-    background-color: var(--color-one);
+    background-color: var(--color-two);
     padding: 5vh;
 }
 .headerlogo{
@@ -55,8 +70,12 @@ header{
     background-color: var(--color-tHREE);
     color: var(--color-two);
 }
+.menue{
+    display: none;
+}
 #hero{
     padding: 10vh;
+    padding-top: 2vh;
 }
 .hero-div{
     display: flex;
@@ -64,8 +83,9 @@ header{
     align-items: center;
     padding-left: 4vh;
     padding-right: 4vh;
-    background-color: grey;
+    background-color: rgba(128, 128, 128, 0.077);
     border-radius: 2%;
+    flex-wrap: wrap;
 }
 .left-side{
     width: 40%;
@@ -73,7 +93,9 @@ header{
 }
 .hero-heading{
     font-size: 70px;
-    text-align: center;
+}
+.hero-text{
+    font-size: 20px;
 }
 .bg-white{
     background-color: var(--color-two);
@@ -85,8 +107,9 @@ header{
     background-color: var(--color-tHREE);
     width: fit-content;
     color: var(--color-two);
-    padding: 2vh;
+    padding: 3vh;
     border-radius: 10%;
+    cursor: pointer;
 }
 .right-side{
     width: 60%;
@@ -95,4 +118,112 @@ header{
 }
 #brands{
     background-color: var(--color-one);
+    display: flex;
+    height: 16vh;
+    justify-content: center;
+    align-items: center;
+    gap: 20vh;
+}
+.brand-logo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 10vh;
+    cursor: pointer;
+}
+.brand-logo>img{
+    width: 100%;
+}
+/*Mobile Responsiveness Starts from Here*/
+@media (max-width: 916px){
+ .for-pc{
+    display: none;}
+    header{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        background-color: var(--color-two);
+        padding: 2vh;
+    }
+    .headerlogo{
+        width: 40%;
+        align-items: center;
+        margin-right: auto;
+    }
+    .menue{
+        display: flex;
+        margin-left: 1vh;
+        z-index: 99;
+    }
+    .open-sidebar{
+     display: flex;
+    }
+    #side-bar{
+        display: none;
+    }
+    .menue-list{
+        background-color: var(--color-one);
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100%;
+        padding: 5vh;
+        display: flex;
+        flex-direction: column;
+        gap: 4vh;
+        font-size: 3vh;
+         z-index: 100;
+        transition: 1s;
+    }
+    /**/
+    #side-bar:checked~ .menue-list{
+        right:0; 
+    }
+    .hero-div{
+        padding: 1vh;
+        flex-direction: column;
+    }
+    .left-side{
+        padding:0;
+        width: 80%;
+    }
+    #hero{
+        padding: 1vh;
+        padding-top: 0vh;
+    }
+    .hero-div{
+        justify-content: flex-start;
+        align-items: flex-start;
+        background-color: rgba(128, 128, 128, 0.077);
+        border-radius: 2%;
+        
+    }
+    .hero-heading{
+        font-size: 7.8vh;
+    }
+    .right-side{
+        align-self: center;
+        width: 100%;
+    }
+    .right-side>img{
+        width: 100%;
+    }
+    #brands{
+        background-color: var(--color-one);
+        display: flex;
+        height: 16vh;
+        justify-content: center;
+        align-items: center;
+        gap: 1vh;
+    }
+    .brand-logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 2vh;
+        cursor: pointer;
+    }
+    
 }
